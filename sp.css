@@ -1,0 +1,151 @@
+.title{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    font-family: 'Supermercado One';
+    font-size: 70px;
+}
+
+.T{
+    margin: 3% 0;
+}
+
+section{
+    display:inline-block;
+}
+
+body{
+    background-image: url(https://wallpaper.dog/large/10936211.jpg);
+    background-size: cover;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Panel{
+    display:flex;
+    flex-direction: column;
+    padding:0%;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+.Row{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0%;
+}
+
+.Row:nth-of-type(1){
+    background-color: lightyellow;
+}
+.Row:nth-of-type(2){
+    background-color: lightgreen;
+}
+.Row:nth-of-type(3){
+    background-color: lightpink;
+}
+
+
+
+.Panel{
+    background-color:rgba(201, 67, 100, 0.863);
+    background-size: cover;
+}
+
+.hero{    
+    margin: 0;
+    width: 30%;
+    height: 30%;
+    transition: flex-grow 320ms;
+}
+
+.Row:nth-of-type(1) .hero{
+    border-right: 1px solid rgb(212, 212, 167);
+}
+.Row:nth-of-type(2) .hero{
+    border-right: 1px solid rgb(107, 209, 107);
+}
+.Row:nth-of-type(3) .hero{
+    border-right: 1px solid rgb(223, 136, 149);
+}
+
+.heroname{
+    display:flex;
+    font-family: 'Bangers', cursive;
+    color:black;
+    font-size:40px;
+    padding: 5% 0;
+}
+
+.HeroPic{
+    width:65%;
+    height: 65%;
+    border-radius:5%;
+}
+
+.hero:hover{
+    flex-grow:4;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(109, 109, 196);
+    size:10px;
+    margin: 10px 0;
+    transition: all 200ms;
+}
+
+a:hover{
+    font-size:32px;
+    color: darkblue;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 25px 0;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 3px solid darkred;
+}
+
+@media(max-width:630px){
+    .Row{
+        flex-direction: column;
+    }
+    .hero{
+        width:80%;
+        border-bottom: 1px solid black;
+    }
+    .HeroPic{
+        width: 100%;
+    }
+    .Row:nth-of-type(1) .hero{
+        border-right: none;
+        border-bottom: 1px solid rgb(212, 212, 167);
+    }
+    .Row:nth-of-type(2) .hero{
+        border-right: none;
+        border-bottom: 1px solid rgb(107, 209, 107);
+    }
+    .Row:nth-of-type(3) .hero{
+        border-right: none;
+        border-bottom: 1px solid rgb(223, 136, 149);
+    }
+    .title{
+        padding-top:10%;
+        font-size:35px;
+    }
+}
+
+@media(max-width=880px){
+
+}
